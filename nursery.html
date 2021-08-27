@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Saroj Nursery</title>
+    <link rel = "icon" href = "D:\Machine learning\topics\web(html)\project\nursery\icon1.jpg" type = "image/x-icon">
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <style>
+        .card-img-top{
+            max-width: 300px;
+            max-height: 150px;
+        }
+
+        .fas{ font-size:10px; 
+                padding:10px; 
+                border: 4px solid lightblue;
+                border-radius:360px; 
+                float:right;
+                float:top; }
+        
+        .add_butt{border:none;
+                    background-color: white;}
+            
+        .add_butt2{border:none;
+                    background-color: white;}
+
+        .badge{
+            position: relative;
+            top: -50px;
+            left: 25px;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+    </style>
+
+    
+</head>
+<body>
+
+    <!-- //nav bar -->
+    <div class="container-fluid">
+        <nav class='navbar navbar-expand-sm bg-dark navbar-dark'>
+            <!-- title for navbar -->
+            <a class="navbar-brand">Saroj Nursery</a>
+
+            <!-- collapse button-->
+            <button class="navbar-toggler" type='button' data-toggle='collapse' data-target="#collapse_nav">
+                <span class='navbar-toggler-icon'></span>
+            </button>
+
+            <!--nav bar links-->
+            <div class="collapse navbar-collapse justify-content-end" id='collapse_nav'>
+                <ul class="navbar-nav">
+                    <li>
+                        <form>
+                            <div class="form-group m-2">
+                                <input type='text' class="form-control justify-content-center" placeholder="Search" id='search'>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="nav-item m-2" style="color: antiquewhite;">
+                        <a class="nav-link" href='#'>Sign in</a>
+                    </li>
+                    
+                    <li class="nav-item m-2" style="color: white;"> 
+                        <a class="nav-link" href='#'><i class="fa fa-shopping-cart"></i></a>
+                        <span class='badge'>0</span>
+                    </li>
+                </ul>
+            </div>
+            
+
+        </nav>
+    <!--nav bar closed-->    
+    </div>
+
+    <br>
+
+    <!-- //carousel -->
+    <div class="container-fluid">
+        <div id='cara1' class="carousel slide" data-ride='carousel' style="background-color: darksalmon;">
+            <ul class="carousel-indicators">
+                <li data-target="#cara1" data-slide-to='0' class='active'></li>
+                <li data-target="#cara1" data-slide-to='1'></li>
+                <li data-target="#cara1" data-slide-to='2'></li>
+            </ul>
+
+            <div class='carousel-inner'>
+                <div class='carousel-item active'>
+                    <img class='mx-auto d-block' src='D:\Machine learning\topics\web(html)\project\nursery\good_luck_plants\broken_heart.jpg'>
+                </div>
+
+                <div class='carousel-item'>
+                    <img class='mx-auto d-block' src='D:\Machine learning\topics\web(html)\project\nursery\good_luck_plants\bonsai.jpg'>
+                </div>
+
+                <div class='carousel-item'>
+                    <img class=" mx-auto d-block" src='D:\Machine learning\topics\web(html)\project\nursery\good_luck_plants\dracena_printed.jpg'>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#cara1" data-slide="prev">
+                <span class="carousel-control-prev-icon" style="color: black;"></span>
+            </a>
+            <a class="carousel-control-next" style="color: black;" href="#cara1" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    
+    
+    
+    <!-- //grid of plants -->
+    <br>
+    <div class='container-fluid'>
+        <h2>Plants for good air</h2>
+        <div class='row'>
+            <div class="col-sm-1 col-md-3 col-lg-2">
+				<div class="card px-8">
+					<img class="card-img-top" src="D:\Machine learning\topics\web(html)\project\nursery\air_pur_plants\aloe_vera.jpg" alt="aloe_vera">
+						<div class="card-body">
+							<p class='card-text'>
+								<div class='media'>
+									<div class='media-body' style="text-align: left;">
+										<div class="paras">
+                                            <p style="text-align: left">
+											<b>Aloe Vera</b>
+                                            <br>
+                                            <div class='iQty'>Qty:0</div>
+										    </p>
+                                        </div>
+									</div>
+                                   
+                                    <div class='symbol' style="display: none;">
+                                        <button type="button" class='add_butt'><i class='fas fa-plus'></i>
+                                        </button>
+                                        <br>
+                                        <button type="button" class='add_butt2'><i class='fas fa-minus'></i>
+                                        </button>                                            
+                                        </div>
+                                        <button type="button" class='addButton1 btn-primary'>ADD</button>
+						
+								</div>
+							</p> 
+						</div> 
+				</div>
+			</div>
+
+            <div class="col-sm-1 col-md-3 col-lg-2">
+				<div class="card px-8">
+					<img class="card-img-top" src="D:\Machine learning\topics\web(html)\project\nursery\air_pur_plants\spider.jpg" alt="spider">
+						<div class="card-body">
+							<p class='card-text'>
+								<div class='media'>
+									<div class='media-body' style="text-align: left;">
+										
+                                        <div class="paras">
+                                            <p style="text-align: left">
+											<b>Spider</b>
+                                            <br>
+                                            <div class='iQty'>Qty:0</div>
+										    </p>
+                                        </div>
+									</div>
+                                        <div class='symbol' style="display: none;">
+                                            <button type="button" class='add_butt'><i class='fas fa-plus'></i>
+                                            </button>
+                                            <br>
+                                            <button type="button" class='add_butt2'><i class='fas fa-minus'></i></button>                                            
+                                        </div>
+                                        <button type="button" class='addButton1 btn-primary'>ADD</button>
+								</div>
+							</p> 
+						</div> 
+				</div>
+			</div>
+
+            <div class="col-sm-1 col-md-3 col-lg-2">
+				<div class="card px-8">
+					<img class="card-img-top" src="D:\Machine learning\topics\web(html)\project\nursery\air_pur_plants\peace_lily.jpg" alt="peaece_lily">
+						<div class="card-body">
+							<p class='card-text'>
+								<div class='media'>
+									<div class='media-body' style="text-align: left;">
+								
+                                        <div class="paras">
+                                            <p style="text-align: left">
+                                                <b>Peace Lily</b>
+                                            <br>
+                                            <div class='iQty'>Qty:0</div>
+										    </p>
+                                        </div>
+									</div>
+                                    
+                                    <div class='symbol' style="display: none;">
+                                        <button type="button" class='add_butt'><i class='fas fa-plus'></i>
+                                        </button>
+                                        <br>
+                                        <button type="button" class='add_butt2'><i class='fas fa-minus'></i></button>                                            
+                                    </div>
+                                    <button type="button" class='addButton1 btn-primary'>ADD</button>
+                                
+                                </div>
+							</p> 
+						</div> 
+				</div>
+			</div>
+
+            <div class="col-sm-1 col-md-3 col-lg-2">
+				<div class="card px-8">
+					<img class="card-img-top" src="D:\Machine learning\topics\web(html)\project\nursery\air_pur_plants\areca_palm.jpg" alt="areca_palm">
+						<div class="card-body">
+							<p class='card-text'>
+								<div class='media'>
+									<div class='media-body' style="text-align: left;">
+										
+                                        <div class="paras">
+                                            <p style="text-align: left">
+                                                <b>Areca Palm</b>
+                                            <br>
+                                            <div class='iQty'>Qty:0</div>
+										    </p>
+                                        </div>
+									</div>
+
+                                    <div class='symbol' style="display: none;">
+                                        <button type="button" class='add_butt'><i class='fas fa-plus'></i>
+                                        </button>
+                                        <br>
+                                        <button type="button" class='add_butt2'><i class='fas fa-minus'></i></button>                                            
+                                    </div>
+                                    <button type="button" class='addButton1 btn-primary'>ADD</button>
+								</div>
+							</p> 
+						</div> 
+				</div>
+			</div>
+
+            <div class="col-sm-1 col-md-3 col-lg-2">
+				<div class="card px-8">
+					<img class="card-img-top" src="D:\Machine learning\topics\web(html)\project\nursery\good_luck_plants\dracena_printed.jpg" alt="dracena_printed">
+						<div class="card-body">
+							<p class='card-text'>
+								<div class='media'>
+									<div class='media-body' style="text-align: left;">
+							
+                                        <div class="paras">
+                                            <p style="text-align: left">
+                                                <b>Dracaena</b>
+                                            <br>
+                                            <div class='iQty'>Qty:0</div>
+										    </p>
+                                        </div>
+									</div>
+
+                                    <div class='symbol' style="display: none;">
+                                        <button type="button" class='add_butt'><i class='fas fa-plus'></i>
+                                        </button>
+                                        <br>
+                                        <button type="button" class='add_butt2'><i class='fas fa-minus'></i></button>                                            
+                                    </div>
+                                    <button type="button" class='addButton1 btn-primary'>ADD</button>
+								</div>
+							</p> 
+						</div> 
+				</div>
+			</div>
+
+            <div class="col-sm-1 col-md-3 col-lg-2" >
+				<div class="card px-8">
+					<img class="card-img-top" src="D:\Machine learning\topics\web(html)\project\nursery\good_luck_plants\feng_shui.jpg" alt="feng_shui">
+						<div class="card-body">
+							<p class='card-text'>
+								<div class='media'>
+									<div class='media-body' style="text-align: left;">
+									
+                                        <div class="paras">
+                                            <p style="text-align: left">
+                                                <b>Feng Shui</b>
+                                            <br>
+                                            <div class='iQty'>Qty:0</div>
+										    </p>
+                                        </div>
+									</div>
+                                    
+                                    <div class='symbol' style="display: none;">
+                                        <button type="button" class='add_butt'><i class='fas fa-plus'></i>
+                                        </button>
+                                        <br>
+                                        <button type="button" class='add_butt2'><i class='fas fa-minus'></i></button>                                            
+                                    </div>
+                                    <button type="button" class='addButton1 btn-primary'>ADD</button>
+								    
+                                </div>
+							</p> 
+						</div> 
+				</div>
+			</div>
+        </div>
+    </div>
+
+    <br>
+    <div class='container-fluid'>
+        <h2>Plants for good luck</h2>
+        <div class='row'>
+            <div class="col-sm-1 col-md-3 col-lg-2">
+				<div class="card px-8">
+					<img class="card-img-top" src="D:\Machine learning\topics\web(html)\project\nursery\good_luck_plants\bamboo.jpg" alt="bamboo plant">
+						<div class="card-body">
+							<p class='card-text'>
+								<div class='media'>
+									<div class='media-body' style="text-align: left;">
+		
+                                        <div class="paras">
+                                            <p style="text-align: left">
+                                                <b>Bambooo Plant</b>
+                                            <br>
+                                            <div class='iQty'>Qty:0</div>
+										    </p>
+                                        </div>
+									</div>
+
+                                    <div class='symbol' style="display: none;">
+                                        <button type="button" class='add_butt'><i class='fas fa-plus'></i>
+                                        </button>
+                                        <br>
+                                        <button type="button" class='add_butt2'><i class='fas fa-minus'></i></button>                                            
+                                    </div>
+                                    <button type="button" class='addButton1 btn-primary'>ADD</button>
+
+                                </div>
+						
+								
+							</p> 
+						</div> 
+				</div>
+			</div>
+
+            <div class="col-sm-1 col-md-3 col-lg-2">
+				<div class="card px-8">
+					<img class="card-img-top" src="D:\Machine learning\topics\web(html)\project\nursery\good_luck_plants\bonsai.jpg" alt="bonsai">
+						<div class="card-body">
+							<p class='card-text'>
+								<div class='media'>
+									<div class='media-body' style="text-align: left;">
+										
+                                        <div class="paras">
+                                            <p style="text-align: left">
+                                                <b>Bonsai</b>
+                                            <br>
+                                            <div class='iQty'>Qty:0</div>
+										    </p>
+                                        </div>
+									</div>
+                                        
+                                    <div class='symbol' style="display: none;">
+                                        <button type="button" class='add_butt'><i class='fas fa-plus'></i>
+                                        </button>
+                                        <br>
+                                        <button type="button" class='add_butt2'><i class='fas fa-minus'></i></button>                                            
+                                    </div>
+                                    <button type="button" class='addButton1 btn-primary'>ADD</button>
+
+								</div>
+							</p> 
+						</div> 
+				</div>
+			</div>
+
+            <div class="col-sm-1 col-md-3 col-lg-2">
+				<div class="card px-8">
+					<img class="card-img-top" src="D:\Machine learning\topics\web(html)\project\nursery\good_luck_plants\broken_heart.jpg" alt="broken_heart">
+						<div class="card-body">
+							<p class='card-text'>
+								<div class='media'>
+									<div class='media-body' style="text-align: left;">
+					
+                                        <div class="paras">
+                                            <p style="text-align: left">
+                                                <b>Broken Heart</b>
+                                            <br>
+                                            <div class='iQty'>Qty:0</div>
+										    </p>
+                                        </div>
+									</div>
+                                        
+                                    <div class='symbol' style="display: none;">
+                                        <button type="button" class='add_butt'><i class='fas fa-plus'></i>
+                                        </button>
+                                        <br>
+                                        <button type="button" class='add_butt2'><i class='fas fa-minus'></i></button>                                            
+                                    </div>
+                                    <button type="button" class='addButton1 btn-primary'>ADD</button>
+
+							    </div>
+							</p> 
+						</div> 
+				</div>
+			</div>
+
+            <div class="col-sm-1 col-md-3 col-lg-2">
+				<div class="card px-8">
+					<img class="card-img-top" src="D:\Machine learning\topics\web(html)\project\nursery\good_luck_plants\dracaena.jpg" alt="dracaena">
+						<div class="card-body">
+							<p class='card-text'>
+								<div class='media'>
+									<div class='media-body' style="text-align: left;">
+                                        <div class="paras">
+                                            <p style="text-align: left">
+                                                <b>Dracaena</b>  <br>
+                                                <div class='iQty'>Qty:0</div>
+										    </p>
+                                        </div>
+									</div>
+                                    
+                                    <div class='symbol' style="display: none;">
+                                        <button type="button" class='add_butt'><i class='fas fa-plus'></i>
+                                        </button>
+                                        <br>
+                                        <button type="button" class='add_butt2'><i class='fas fa-minus'></i></button>                                            
+                                    </div>
+                                    <button type="button" class='addButton1 btn-primary'>ADD</button>
+								</div>
+							</p> 
+						</div> 
+				</div>
+			</div>
+
+            <div class="col-sm-1 col-md-3 col-lg-2">
+				<div class="card px-8">
+					<img class="card-img-top" src="D:\Machine learning\topics\web(html)\project\nursery\good_luck_plants\dracena_printed.jpg" alt="dracena_printed">
+						<div class="card-body">
+							<p class='card-text'>
+								<div class='media'>
+									<div class='media-body' style="text-align: left;">
+                                        <div class="paras">
+                                            <p style="text-align: left">
+                                                <b>Dracaena</b> <br>
+                                                <div class='iQty'> Qty:0 </div>
+										    </p>
+                                        </div>
+									</div>
+                                    
+                                    <div class='symbol' style="display: none;">
+                                        <button type="button" class='add_butt'><i class='fas fa-plus'></i>
+                                        </button>
+                                        <br>
+                                        <button type="button" class='add_butt2'><i class='fas fa-minus'></i></button>                                            
+                                    </div>
+                                    <button type="button" class='addButton1 btn-primary'>ADD</button>
+
+								</div>
+							</p> 
+						</div> 
+				</div>
+			</div>
+
+            <div class="col-sm-1 col-md-3 col-lg-2" >
+				<div class="card px-8">
+					<img class="card-img-top" src="D:\Machine learning\topics\web(html)\project\nursery\good_luck_plants\feng_shui.jpg" alt="feng_shui">
+						<div class="card-body">
+							<p class='card-text'>
+								<div class='media'>
+									<div class='media-body' style="text-align: left;">
+										
+                                        <div class="paras">
+                                            <p style="text-align: left">
+                                                <b>Feng Shui</b>
+                                            <br>
+                                            <div class='iQty'>Qty:0</div>
+										    </p>
+                                        </div>
+									</div>
+								
+                                    <div class='symbol' style="display: none;">
+                                        <button type="button" class='add_butt'><i class='fas fa-plus'></i>
+                                        </button>
+                                        <br>
+                                        <button type="button" class='add_butt2'><i class='fas fa-minus'></i></button>                                            
+                                    </div>
+                                    <button type="button" class='addButton1 btn-primary'>ADD</button>
+
+                            	</div>
+							</p> 
+						</div> 
+				</div>
+			</div>
+        </div>
+    </div>
+        
+    <script src='nursery_script.js'></script>
+</body>
+</html>
